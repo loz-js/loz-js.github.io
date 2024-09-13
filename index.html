@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmony Hub</title>
+    <title>HarmonyHub</title>
+    <meta content="Share your music! Bringing you and your music to the streaming world andd beyond." name="description">
     <link rel="stylesheet" href="/style.css">
+    <script src="" href="/app.js"></script>
 </head>
 <body>
+    <div> data-animation= "over-left" class= "navbar w-nav" data-easing2= "ease" data-collapse="medium" role="banner" data-no-scroll= "1" data-duration= "400" data-doc-height= "1">
+        ::before
+        <div class="nav-div">
+            <nav role="navigation" class="nav-logo w-nav-menu">
+                <div class="div-block-11">
+                    <a href="/en/home" aria-current="page" class="w-nav-brand w--current">
+                        <img src="" loading="lazy" alt="HarmonyHub Logo" class="mh-logo">
+                    </a>
+                </div>
+                <a href =""
+                target="_blank" class="button__small is--header is--mobile_visible w-button">Register now</a>
+                <a href="/en/join-waitlist" class="button__small is--header is--secondary is--mobile_visible w-button">Log in</a>
+            </nav>
+        </div>
+    </div>
     <header id="main-header">
         <!-- the content of the header goes header -->
          <h1 id="logo" >  HarmonyHub</h1>
@@ -34,7 +51,7 @@
                         src="<%=song.url %>"
                         title=" Youtube video player"
                         frameborder = "0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                 </iframe>
             </li>
