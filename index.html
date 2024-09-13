@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightMusicSite</title>
+    <title>Harmony Hub</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header id="main-header">
@@ -55,11 +53,18 @@
                         <blockquote>
                             "Harmony Hub has made me enjoy music on a deeper level!" - <cite>Shaq, 2024</cite>
                         </blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius architecto officiis voluptate. Totam rem eligendi, reprehenderit commodi fuga iusto nemo tenetur at praesentium eaque, voluptate nam pariatur id, aspernatur ipsa hic error? Id voluptate enim labore tenetur maiores omnis impedit. Magni voluptatum inventore esse perspiciatis doloribus neque architecto repudiandae.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorem recusandae ipsum eaque ut omnis aperiam culpa et molestiae rem, cumque pariatur natus consectetur aliquid in, unde sunt, ipsam alias tenetur dolorum! Error exercitationem quis, ad aliquid dicta neque. Numquam est quasi dolores vel aliquid suscipit sit eveniet, quia aperiam.</p>
-                        <blockquote>
-                            "Semilore is amazing!" - <cite>Everyone, 2024</cite>
-                        </blockquote>
+                        <h2>Music Library</h2>
+                        <ul>
+                            <% songs.forEach(song => { %>
+                                <li>
+                                    <strong><%= song.title %></strong> by <%= song.artist %>
+                                    <audio controls>
+                                        <source src="<%= song.url %>" type="audio/mp3">
+                                    </audio>
+                                </li>
+                            <% }); %>
+                        </ul>
+                       
                     </main>
                     <footer>
                         <h2>Author: S3MII D BADDI3</h2>
@@ -67,32 +72,10 @@
                         <h3>Last posted: 2024</h3>
                         <a href="https://www.youtube.com/watch?v=R9IAuka2YUk" target="_blank">Author's Culture</a>
                     </footer>
-                </article>
-                <article>
-                    <header>
-                        <!-- Article's header goes here -->
-                        <h2>Ten Amusing Facts about Semilore</h2>
-                        <h3>Read time: 5 minutes </h3>
-                        <h4>Written for: Baddies</h4>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum excepturi magnam maiores cupiditate? Est ipsa, sequi fugiat assumenda quasi modi architecto enim. Magnam omnis vero autem explicabo praesentium maiores enim! Totam libero nobis doloribus quae eum in quaerat eaque similique? Veniam consequatur, fugit, rerum aperiam repudiandae laborum a et totam veritatis accusantium expedita nam esse impedit necessitatibus optio? Amet assumenda eaque officiis minima excepturi impedit? Perspiciatis praesentium odio dicta commodi sed nemo earum deserunt officiis placeat optio obcaecati quos error at iusto maxime accusantium exercitationem atque omnis voluptatum quaerat, sapiente aspernatur recusandae magni cum. Odio itaque culpa illum perspiciatis sed.</p>
-                        <blockquote>
-                            "I love Semilore!" - <cite>Everyone, 2024</cite>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius architecto officiis voluptate. Totam rem eligendi, reprehenderit commodi fuga iusto nemo tenetur at praesentium eaque, voluptate nam pariatur id, aspernatur ipsa hic error? Id voluptate enim labore tenetur maiores omnis impedit. Magni voluptatum inventore esse perspiciatis doloribus neque architecto repudiandae.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorem recusandae ipsum eaque ut omnis aperiam culpa et molestiae rem, cumque pariatur natus consectetur aliquid in, unde sunt, ipsam alias tenetur dolorum! Error exercitationem quis, ad aliquid dicta neque. Numquam est quasi dolores vel aliquid suscipit sit eveniet, quia aperiam.</p>
-                        <blockquote>
-                            "Semilore is amazing!" - <cite>Everyone, 2024</cite>
-                        </blockquote>
-                    </main>
-                    <footer>
-                        <h2>Author: S3MII D BADDI3</h2>
-                        <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/02/23/11/little-simz.jpg?crop=8:5,smart&quality=75&auto=webp&width=500" alt="Baddie Simbi">
-                        <h3>Last posted: 2024</h3>
-                        <a href="https://www.youtube.com/watch?v=R9IAuka2YUk" target="_blank">Author's Culture</a>
-                    </footer>
-                </article>
+               
+                    
+                    
+            
             </div>
             
             
