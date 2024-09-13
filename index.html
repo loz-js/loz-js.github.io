@@ -19,14 +19,17 @@
     </header>
     <main>
         <p>We are a dynamic online platform that serves as a central space for artists, listeners, and music enthusiaststo connect, discover and share music. We offer a wide range of features such as music streaming, artist profiles, playlists and recommendations, catering to diverse musical tastes. Users can explore new genres follow their favourite artists, and engage with a community of fellow music lovers. By bridging the gap between creators and listeners, Harmony Hub aim to foster a vibrant ecosystem where music can thrive and evolve!</p>
+        <blockquote>
+            "Harmony Hub has made me enjoy music on a deeper level!" - <cite>Shaq, 2024</cite>
+        </blockquote>
     </main>
     <main>
     <h2>Available Tracks</h2>
     <ul>
         <% songs.forEach(song => { %>
             <li class="song">
-                <strong>Title:</strong> <%= song.title %> <br>
-                <strong>Artist:</strong> <%= song.artist %> <br>
+                <p>Title: <%= song.title %></p> <br>
+                <p>Artist:<%= song.artist %></p> <br>
                 <iframe width="560" height="315"
                         src="<%=song.url %>"
                         title=" Youtube video player"
@@ -48,6 +51,7 @@
                         <blockquote>
                             "Harmony Hub has made me enjoy music on a deeper level!" - <cite>Shaq, 2024</cite>
                         </blockquote>
+                                 
                         <h2>Music Library</h2>
                         <ul>
                             <% songs.forEach(song => { %>
