@@ -13,12 +13,12 @@ app.get('/', (req, res) => {
 app.get('/library', (req, res) => {  
     const songs = [
         { title: 'Start', artist: 'Asake', url:'https://www.youtube.com/watch?v=STKa-IIY6I8'},
-        { title: 'Both Sides of a Smile', artist: 'Santan Dave', url: 'Both Sides Of A Smile.mp3'}
+        { title: 'Both Sides of a Smile', artist: 'Santan Dave', url: 'https://www.youtube.com/watch?v=OPBSAxv7LCU'}
     ];
     res.render('library', {songs});
 });
 
 const PORT = 3000;
 app.listen (PORT, () => {
-    console.log('Server is running on https://localhost:${PORT}');
+    console.log('https://localhost:${PORT}');
 }); 

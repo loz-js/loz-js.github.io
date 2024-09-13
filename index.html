@@ -10,7 +10,7 @@
     <header id="main-header">
         <!-- the content of the header goes header -->
          <h1 id="logo" >  HarmonyHub</h1>
-         <nav>
+        <nav>
             <ul id="nav-ul">
                 <li><a href="/library" class="navbutton" target="_blank">Music Library</a></li>
                 <li><a href="/profile" class= "navbutton" target="_blank">Profile</a></li>
@@ -18,31 +18,26 @@
          </nav>
     </header>
     <main>
-        <div id="main-content">
-            <aside>
-                <section>
-                    <h4>Filter by Month</h4>
-                    <nav>
-                        <ul>
-                            <li><a href=""></a>Filter for January</li>
-                            <li><a href=""></a>Filter for February</li>
-                            <li><a href=""></a>Filter for March</li>
-                        </ul>
-                    </nav>
-                </section>
-                <section>
-                    <h4>Filter by Category</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">Santan</a></li>
-                            <li><a href="">Simbi</a></li>
-                            <li><a href="">Baddie</a></li>
-                            <li><a href="">Lore</a></li>
-                        </ul>
-                    </nav>
-                </section>
-            </aside>
-            <div>
+        <p>We are a dynamic online platform that serves as a central space for artists, listeners, and music enthusiaststo connect, discover and share music. We offer a wide range of features such as music streaming, artist profiles, playlists and recommendations, catering to diverse musical tastes. Users can explore new genres follow their favourite artists, and engage with a community of fellow music lovers. By bridging the gap between creators and listeners, Harmony Hub aim to foster a vibrant ecosystem where music can thrive and evolve!</p>
+    </main>
+    <main>
+    <h2>Available Tracks</h2>
+    <ul>
+        <% songs.forEach(song => { %>
+            <li class="song">
+                <strong>Title:</strong> <%= song.title %> <br>
+                <strong>Artist:</strong> <%= song.artist %> <br>
+                <iframe width="560" height="315"
+                        src="<%= song.url %>"
+                        title=" Youtube video player"
+                        frameborder = "0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope, picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </li>
+        <% })%>
+    </ul>
+    </main>
                 <article>
                     <header>
                         <!-- Article's header goes here -->
