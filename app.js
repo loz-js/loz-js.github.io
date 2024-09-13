@@ -1,15 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-    const images = document.querySelectorAll("img");
-
-    for(const image of images){
-        fetch("https://cat.ceo/api/breeds/image/random")
-        .then(response => response.json())
-        .then(data => {
-            image.src = data.message
-            image.width = 100;
-            image.height = 100;
-        })
-    }
-
-})
+AudioParamMap.get ('/library',(req,res) => {
+    const songs = [
+        { title: 'Start', artist: 'Asake', url:'https://www.youtube.com/watch?v=STKa-IIY6I8'},
+        { title: 'Both Sides of a Smile', artist: 'Santan Dave', url: 'https://www.youtube.com/watch?v=STKa-IIY6I8'}
+    ];
+    res.render('library', {songs});
+});
