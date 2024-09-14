@@ -73,18 +73,6 @@ footer{
 }
 
 
-ul{
-    margin:0px ;
-}
-
-body > header {
-    background-color: hotpink;
-    color: rgb(70, 67, 67);
-    box-shadow: 6px 6px 10px 3px rgb(121, 68, 121);
-    border-radius: 2%;
-    display: flex;
-    justify-content: space-between;
-}
 
 
 
