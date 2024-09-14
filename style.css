@@ -6,10 +6,9 @@ body {
 }
 
 header{
-    grid-area: header;
-    background: #333;
-    color: palevioletred;
     padding: 16px;
+    background-color: #333;
+    color: palevioletred;
     text-align: center;
     font-family: "Fredoka One", sans-serif;
     width: 60%;
@@ -31,15 +30,6 @@ nav{
     display: flex;
     align-items:center;
     flex-flow: column;
-    grid-area: nav;
-    background: #f4f4f4;
-    padding: 20px;
-    color: rgb(70, 67, 67);
-    text-decoration: none;
-    padding: 8px;
-    border: 3px solid grey;
-    border-radius: 10%;
-    box-shadow: 6px 6px 10px 3px rgb(37, 37, 37);  
 }
 
 
