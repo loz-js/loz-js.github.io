@@ -23,7 +23,7 @@ body {
     gap: 10px;
 }
 
-.main-header{
+.header{
     grid-area: header;
     background: #333;
     color: palevioletred;
