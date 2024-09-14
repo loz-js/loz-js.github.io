@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -7,7 +6,7 @@ body {
     font-size: 2vw;
 }
 
-.header{
+header{
     grid-area: header;
     background: #333;
     color: palevioletred;
@@ -27,7 +26,7 @@ body {
     background-color: grey;
 }
 
-.nav{
+nav{
     margin-top: 20px;
     display: flex;
     align-items:center;
@@ -57,22 +56,18 @@ body {
 }
 
 
-.main{
+#main-content{
     padding:32px;
     grid-area: main;
-    background: #ddd;
+    background: #bfb8b8;
 }
 
-.sidebar{
-    grid-area: sidebar;
-    background:#f4f4f4
-    padding: 20px;
-}
 
-.footer{
+footer{
     grid-area: footer;
     background:#333;
     color: palevioletred;
+    font-weight: bold;
     padding: 20px;
     text-align:center;
 }
