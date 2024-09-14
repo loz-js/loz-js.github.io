@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HarmonyHub</title>
-    <link rel="stylesheet" href="/style.css">
-    <script src="" href="/app.js"></script>
 </head>
 <body>
-    <header id="main-header">
+    <div class="grid container">
+        <header class="header">Header</header>
+        <nav class="nav">Navigation</nav>
+        <main class="main">Main Content</main>
+        <aside class="sidebar">Sidebar</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>       
+        <header id="main-header">
         <!-- the content of the header goes header -->
-         <h1 id="logo" >  HarmonyHub</h1>
-        <nav>
+         <h1 id="logo" >  BrightBlogBaddie</h1>
+         <nav>
             <ul id="nav-ul">
-                <li><a href="/library" class="navbutton" target="_blank">Music Library</a></li>
-                <li><a href="/profile" class= "navbutton" target="_blank">Profile</a></li>
-            </ul>
+                <li><a href="https://www.youtube.com/watch?v=eAN40ze_Hjw" class="navbutton" target="_blank">HOME</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ADhShwdV0uI" class= "navbutton" target="_blank">ABOUT</a></li>
+                <li><a href="https://www.youtube.com/watch?v=STKa-IIY6I8" class="navbutton" target="_blank">CONTACT</a></li>
+             </ul>
          </nav>
     </header>
     <main>
-        <h1>Welcome to HarmonyHub</h1>
-        <p>We are a dynamic online platform that serves as a central space for artists, listeners, and music enthusiaststo connect, discover and share music. We offer a wide range of features such as music streaming, artist profiles, playlists and recommendations, catering to diverse musical tastes. Users can explore new genres follow their favourite artists, and engage with a community of fellow music lovers. By bridging the gap between creators and listeners, Harmony Hub aim to foster a vibrant ecosystem where music can thrive and evolve!</p>
-        <blockquote>
-            "Harmony Hub has made me enjoy music on a deeper level!" - <cite>Shaq, 2024</cite>
-        </blockquote>
-    </main>
-    <main>
-    <h2>Available Tracks</h2>
-    <ul>
-        <meta property="og:url" content="https://www.youtube.com/watch?v=OPBSAxv7LCU">  
-            ::before
-            <div class="nav-div">
-                <nav role="navigation" class="nav-logo w-nav-menu">
-                    <div class="div-block-11">
-                        <a href="/en/home" aria-current="page" class="w-nav-brand w--current">
-                            <img src="" loading="lazy" alt="HarmonyHub Logo" class="mh-logo">
-                        </a>
-                    </div>
-                    <a href =""
-                    target="_blank" class="button__small is--header is--mobile_visible w-button">Register now</a>
-                    <a href="/en/join-waitlist" class="button__small is--header is--secondary is--mobile_visible w-button">Log in</a>
-                </nav>
-            </div>
-        </div>
-        <% songs.forEach(song => { %>
-            <li class="song">
-                <p>Title: <%= song.title %></p> <br>
-                <p>Artist:<%= song.artist %></p> <br>
-                <iframe width="560" height="315"
-                        src="<%=song.url %>"
-                        title=" Youtube video player"
-                        frameborder = "0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                </iframe>
-            </li>
-        <% })%>
-    </ul>
-    </main>
-                    <main>            
-                        <h2>Music Library</h2>
+        <div id="main-content">
+            <aside>
+                <section>
+                    <h4>Filter by Month</h4>
+                    <nav>
                         <ul>
-                            <% songs.forEach(song => { %>
-                                <li>
-                                    <strong><%= song.title %></strong> by <%= song.artist %>
-                                    <audio controls>
-                                        <source src="<%= song.url %>" type="audio/mp3">
-                                    </audio>
-                                </li>
-                            <% }); %>
+                            <li><a href=""></a>Filter for January</li>
+                            <li><a href=""></a>Filter for February</li>
+                            <li><a href=""></a>Filter for March</li>
                         </ul>
-                       
+                    </nav>
+                </section>
+                <section>
+                    <h4>Filter by Category</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="">Santan</a></li>
+                            <li><a href="">Simbi</a></li>
+                            <li><a href="">Baddie</a></li>
+                            <li><a href="">Lore</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+            <div>
+                <article>
+                    <header>
+                        <!-- Article's header goes here -->
+                        <h2>WELCOME TO HARMONY HUB</h2>
+                    </header>
+                    <main>
+                        <p>We are a dynamic online platform that serves as a central space for artists, listeners, and music enthusiaststo connect, discover and share music. We offer a wide range of features such as music streaming, artist profiles, playlists and recommendations, catering to diverse musical tastes. Users can explore new genres follow their favourite artists, and engage with a community of fellow music lovers. By bridging the gap between creators and listeners, Harmony Hub aim to foster a vibrant ecosystem where music can thrive and evolve!</p>
+                        <blockquote>
+                            "I love Semilore!" - <cite>Everyone, 2024</cite>
+                        </blockquote>
                     </main>
                     <footer>
-                        <h2>Author: S3MII D BADDI3</h2>
-                        <img src="https://i0.wp.com/explain.com.ng/wp-content/uploads/2020/09/ASA-2.png?resize=500%2C596&ssl=1" alt="Baddie Asa" style="height: 400px; width: 500px;">
-                        <h3>Last posted: 2024</h3>
+                        <h2>Founder: Lore</h2>
+                        <img src="https://i0.wp.com/explain.com.ng/wp-content/uploads/2020/09/ASA-2.png?resize=500%2C596&ssl=1" alt="Baddie Asa" style="height: 400px; width: 500"> 
                         <a href="https://www.youtube.com/watch?v=R9IAuka2YUk" target="_blank">Author's Culture</a>
                     </footer>
-               
-                    
-                    
-            
+                </article>
+                
             </div>
             
             
-        </div>
+        
         
         <!-- main content of the website can go header -->
     
         <hr>
-        <h2>Join the Hub!</h2>
+        <h2>Sign up for our newsletter!</h2>
         <form action="" method="">
             <label for="first_name">First Name:</label>
             <input type="text" id="first_name" name="first_name" required/>
@@ -108,8 +99,32 @@
             <input type="password" name="password" id="password">
             <br>
 
+            <label for="favourite_artist">Favourite Artist:</label>
+            <input type="radio" name="favourite_artist" id="dave" value="dave">
+            <label for="dave">Dave</label>
+            <input type="radio" name="favourite_artist" id="simz" value="simz">
+            <label for="simz">Little Simz</label>
+            <input type="radio" name="favourite_artist" id="asake" value="asake">
+            <label for="asake">Asake</label>
+            <input type="radio" name="favourite_artist" id="asa" value="asa">
+            <label for="asa">Asa</label>
+            <br>
+
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="england">England</option>
+                <option value="scotland">Scotland</option>
+                <option value="wales">Wales</option>
+                <option value="nigeria">Nigeria</option>
+            </select>
+            <br>
+
+            <label for="bio">Biography:</label>
+            <textarea name="bio" id="bio" cols="10" rows="5"></textarea>
+            <br>
+
             <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe for latest updates!</label>
+            <label for="subscribe">Subscribe to our newsletter</label>
             <br>
 
             <input type="submit" value="Submit!">
@@ -119,7 +134,7 @@
 
     </main>
     <footer>
-        <h2>HarmonyHub</h2>
+        <h2>BrightBlogSite</h2>
         <section>
             <nav>
                 <ul id="footer-ul">
@@ -127,6 +142,7 @@
                         <li><a href="">Home</a></li>
                         <li><a href="">About Me</a></li>
                         <li><a href="">Contact</a></li>
+                        <li><a href="">Careers</a></li>
                     </div>
                     <div>
                         <li><a href="">Privacy Policy</a></li>
