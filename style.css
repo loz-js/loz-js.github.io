@@ -57,8 +57,7 @@ footer{
     grid-template-areas: 
         'header header '
         'menu main'
-        'footer footer'
-        'img';
+        'footer footer';
     grid-template-columns: 3fr 7fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
