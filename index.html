@@ -19,6 +19,7 @@
          </nav>
     </header>
     <main>
+        <h1>Welcome to HarmonyHub</h1>
         <p>We are a dynamic online platform that serves as a central space for artists, listeners, and music enthusiaststo connect, discover and share music. We offer a wide range of features such as music streaming, artist profiles, playlists and recommendations, catering to diverse musical tastes. Users can explore new genres follow their favourite artists, and engage with a community of fellow music lovers. By bridging the gap between creators and listeners, Harmony Hub aim to foster a vibrant ecosystem where music can thrive and evolve!</p>
         <blockquote>
             "Harmony Hub has made me enjoy music on a deeper level!" - <cite>Shaq, 2024</cite>
@@ -27,6 +28,21 @@
     <main>
     <h2>Available Tracks</h2>
     <ul>
+        <meta property="og:url" content="https://www.youtube.com/watch?v=OPBSAxv7LCU">  
+            ::before
+            <div class="nav-div">
+                <nav role="navigation" class="nav-logo w-nav-menu">
+                    <div class="div-block-11">
+                        <a href="/en/home" aria-current="page" class="w-nav-brand w--current">
+                            <img src="" loading="lazy" alt="HarmonyHub Logo" class="mh-logo">
+                        </a>
+                    </div>
+                    <a href =""
+                    target="_blank" class="button__small is--header is--mobile_visible w-button">Register now</a>
+                    <a href="/en/join-waitlist" class="button__small is--header is--secondary is--mobile_visible w-button">Log in</a>
+                </nav>
+            </div>
+        </div>
         <% songs.forEach(song => { %>
             <li class="song">
                 <p>Title: <%= song.title %></p> <br>
