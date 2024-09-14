@@ -1,15 +1,48 @@
-{
-    margin:0;
-    padding:0;
-    box-sizing: border-menu;
-}
 
 body {
+    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: grey;
     margin: 0px ;
     font-size: 2vw;
 }
+
+.header{
+    grid-area: header;
+    background: #333;
+    color: palevioletred;
+    padding: 16px;
+    text-align: center;
+    font-family: "Fredoka One", sans-serif;
+    width: 60%;
+    text-shadow: 
+    1px 1px 0px black, /*Bottom-right shadow*/
+    0px 1px 0px black, /*Bottom-left shadow*/
+    1px 0px 0px black, /*Top-right shadow*/
+    0px 0px 0px black; /*Top-left shadow*/
+}
+
+#menu{
+    padding: 32px;
+    background-color: grey;
+}
+
+.nav{
+    margin-top: 20px;
+    display: flex;
+    align-items:center;
+    flex-flow: column;
+    grid-area: nav;
+    background: #f4f4f4;
+    padding: 20px;
+    color: rgb(70, 67, 67);
+    text-decoration: none;
+    padding: 8px;
+    border: 3px solid grey;
+    border-radius: 10%;
+    box-shadow: 6px 6px 10px 3px rgb(37, 37, 37);  
+}
+
 
 .grid-container{
     display:grid;
@@ -23,37 +56,11 @@ body {
     gap: 10px;
 }
 
-.header{
-    grid-area: header;
-    background: #333;
-    color: palevioletred;
-    padding: 50px;
-    text-align: center;
-    font-family: "Fredoka One", sans-serif;
-    width: 60%;
-    text-shadow: 
-    1px 1px 0px black, /*Bottom-right shadow*/
-    0px 1px 0px black, /*Bottom-left shadow*/
-    1px 0px 0px black, /*Top-right shadow*/
-    0px 0px 0px black; /*Top-left shadow*/
-}
-
-.nav{
-    grid-area: nav;
-    background: #f4f4f4;
-    padding: 20px;
-    color: rgb(70, 67, 67);
-    text-decoration: none;
-    padding: 8px;
-    border: 3px solid grey;
-    border-radius: 10%;
-    box-shadow: 6px 6px 10px 3px rgb(37, 37, 37);  
-}
 
 .main{
+    padding:32px;
     grid-area: main;
     background: #ddd;
-    padding: 20px;
 }
 
 .sidebar{
