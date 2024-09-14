@@ -35,6 +35,12 @@ body {
     grid-area: nav;
     background: #f4f4f4;
     padding: 20px;
+    color: rgb(70, 67, 67);
+    text-decoration: none;
+    padding: 8px;
+    border: 3px solid grey;
+    border-radius: 10%;
+    box-shadow: 6px 6px 10px 3px rgb(37, 37, 37);  
 }
 
 .main{
@@ -82,73 +88,9 @@ body > header {
     justify-content: space-between;
 }
 
-#nav-ul{
-    display: flex;
-}
 
-#nav-ul > li{
-    padding: 6px; 
-    margin: 1px;
-}
 
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
-}
-    
-.navbutton{ 
-    color: rgb(70, 67, 67);
-    text-decoration: none;
-    padding: 8px;
-    border: 3px solid grey;
-    border-radius: 10%;
-    box-shadow: 6px 6px 10px 3px rgb(37, 37, 37);
-}
 
-body> main article {
-    width: 60%;
-    margin: auto;
-}
 
-#main-content{
-    display: flex;
-}
 
-#main-content > div{
-    width: 60%; 
-}
-
-form{
-    text-align: center;
-}
-
-h2{
-    text-align: center;
-}
-
-footer{
-    background-color: hotpink;
-}
-
-body > footer{
-    display: flex;
-}
-
-img{
-    border-radius: 40%;
-}
-
-#footer-ul{
-    display:flex;
-    list-style: none;
-}
-
-#footer-ul > div > li{
-    margin-left: 12px;
-}
-
-#footer-ul > div > li > a{
-    color: rgb(46, 44, 44);
-    text-decoration: none;
-}
 
