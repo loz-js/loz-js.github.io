@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HarmonyHub</title>
-    <meta content="Share your music! Bringing you and your music to the streaming world andd beyond." name="description">
     <link rel="stylesheet" href="/style.css">
     <script src="" href="/app.js"></script>
 </head>
 <body>
-    
     <header id="main-header">
         <!-- the content of the header goes header -->
          <h1 id="logo" >  HarmonyHub</h1>
@@ -19,21 +17,6 @@
                 <li><a href="/profile" class= "navbutton" target="_blank">Profile</a></li>
             </ul>
          </nav>
-    <div> data-animation= "over-left" class= "navbar w-nav" data-easing2= "ease" data-collapse="medium" role="banner" data-no-scroll= "1" data-duration= "400" data-doc-height= "1">
-            ::before
-        <div class="nav-div">
-            <nav role="navigation" class="nav-logo w-nav-menu">
-                <div class="div-block-11">
-                    <a href="/en/home" aria-current="page" class="w-nav-brand w--current">
-                        <img src="" loading="lazy" alt="HarmonyHub Logo" class="mh-logo">
-                    </a>
-                </div>
-                <a href =""
-                target="_blank" class="button__small is--header is--mobile_visible w-button">Register now</a>
-                <a href="/en/join-waitlist" class="button__small is--header is--secondary is--mobile_visible w-button">Log in</a>
-            </nav>
-        </div>
-    </div>
     </header>
     <main>
         <p>We are a dynamic online platform that serves as a central space for artists, listeners, and music enthusiaststo connect, discover and share music. We offer a wide range of features such as music streaming, artist profiles, playlists and recommendations, catering to diverse musical tastes. Users can explore new genres follow their favourite artists, and engage with a community of fellow music lovers. By bridging the gap between creators and listeners, Harmony Hub aim to foster a vibrant ecosystem where music can thrive and evolve!</p>
@@ -59,17 +42,7 @@
         <% })%>
     </ul>
     </main>
-                <article>
-                    <header>
-                        <!-- Article's header goes here -->
-                        <h1>WELCOME TO HARMONY HUB!</h1>
-                    </header>
-                    <main>
-                        <p>We are a dynamic online platform that serves as a central space for artists, listeners, and music enthusiaststo connect, discover and share music. We offer a wide range of features such as music streaming, artist profiles, playlists and recommendations, catering to diverse musical tastes. Users can explore new genres follow their favourite artists, and engage with a community of fellow music lovers. By bridging the gap between creators and listeners, Harmony Hub aim to foster a vibrant ecosystem where music can thrive and evolve!</p>
-                        <blockquote>
-                            "Harmony Hub has made me enjoy music on a deeper level!" - <cite>Shaq, 2024</cite>
-                        </blockquote>
-                                 
+                    <main>            
                         <h2>Music Library</h2>
                         <ul>
                             <% songs.forEach(song => { %>
@@ -101,7 +74,7 @@
         <!-- main content of the website can go header -->
     
         <hr>
-        <h2>Sign up for our newsletter!</h2>
+        <h2>Join the Hub!</h2>
         <form action="" method="">
             <label for="first_name">First Name:</label>
             <input type="text" id="first_name" name="first_name" required/>
@@ -119,32 +92,8 @@
             <input type="password" name="password" id="password">
             <br>
 
-            <label for="favourite_artist">Favourite Artist:</label>
-            <input type="radio" name="favourite_artist" id="dave" value="dave">
-            <label for="dave">Dave</label>
-            <input type="radio" name="favourite_artist" id="simz" value="simz">
-            <label for="simz">Little Simz</label>
-            <input type="radio" name="favourite_artist" id="asake" value="asake">
-            <label for="asake">Asake</label>
-            <input type="radio" name="favourite_artist" id="asa" value="asa">
-            <label for="asa">Asa</label>
-            <br>
-
-            <label for="country">Country:</label>
-            <select name="country" id="country">
-                <option value="england">England</option>
-                <option value="scotland">Scotland</option>
-                <option value="wales">Wales</option>
-                <option value="nigeria">Nigeria</option>
-            </select>
-            <br>
-
-            <label for="bio">Biography:</label>
-            <textarea name="bio" id="bio" cols="10" rows="5"></textarea>
-            <br>
-
             <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to our newsletter</label>
+            <label for="subscribe">Subscribe for latest updates!</label>
             <br>
 
             <input type="submit" value="Submit!">
@@ -154,7 +103,7 @@
 
     </main>
     <footer>
-        <h2>BrightBlogSite</h2>
+        <h2>HarmonyHub</h2>
         <section>
             <nav>
                 <ul id="footer-ul">
@@ -162,7 +111,6 @@
                         <li><a href="">Home</a></li>
                         <li><a href="">About Me</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="">Careers</a></li>
                     </div>
                     <div>
                         <li><a href="">Privacy Policy</a></li>
