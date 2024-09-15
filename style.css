@@ -27,11 +27,6 @@ header{
     grid-area: menu;
 }
 
-#nav-ul > li{
-    padding: 6px; 
-    margin: 1px;
-}
-
 #nav-ul{
     margin-top: 20px;
     display: flex;
@@ -39,6 +34,11 @@ header{
     flex-flow: column;
     text-decoration: none;
 
+}
+
+#nav-ul > li{
+    padding: 6px; 
+    margin: 2px;
 }
 
 body > header > nav > ul {
@@ -54,7 +54,6 @@ body > header > nav > ul {
     border-radius: 10%;
     box-shadow: 6px 6px 10px 3px rgb(37, 37, 37);
 }
-
 
 #main-content{
     padding:32px;
