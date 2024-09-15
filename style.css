@@ -27,11 +27,13 @@ header{
     grid-area: menu;
 }
 
-nav{
+#nav-ul{
     margin-top: 20px;
     display: flex;
     align-items:center;
     flex-flow: column;
+    text-decoration: none;
+
 }
 
 
