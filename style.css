@@ -37,8 +37,8 @@ header{
 }
 
 #nav-ul > li{
-    padding: 6vh; 
-    margin: 10vh;
+    padding: 6px; 
+    margin: 10px;
     list-style: none;
     text-decoration: none;
 }
