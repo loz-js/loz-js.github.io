@@ -27,6 +27,11 @@ header{
     grid-area: menu;
 }
 
+#nav-ul > li{
+    padding: 6px; 
+    margin: 1px;
+}
+
 #nav-ul{
     margin-top: 20px;
     display: flex;
@@ -34,6 +39,11 @@ header{
     flex-flow: column;
     text-decoration: none;
 
+}
+
+body > header > nav > ul {
+    list-style: none;
+    text-decoration: none;
 }
 
 .navbutton{ 
