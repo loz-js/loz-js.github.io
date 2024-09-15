@@ -39,6 +39,8 @@ header{
 #nav-ul > li{
     padding: 6vh; 
     margin: 10vh;
+    list-style: none;
+    text-decoration: none;
 }
 
 body > header > nav > ul {
